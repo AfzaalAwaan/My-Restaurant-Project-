@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAVORÉ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h2 class="logo">SAVORÉ</h2>
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact Us </a>
+                <a class="btn" href="#contact">Reserve A Table</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Savour the Moment</h1>
+        <P>Fresh ingredients, bold flavours, and a dining experience you'll remember.</P>
+        <a class="btn" href="#">Reserve A Table</a>
+    </section>
+    <section class="Menu" id="menu">
+        <h2>Signature Dishes</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="./images/1.jpg" alt="Gourmet Salad">
+                <h2>Gourmet Salad </h2>
+                <p>Delicious gourmet salad with grilled shrimp and fresh greens served on elegant white plate.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="./images/2.jpg" alt="Gourmet Dish ">
+                <h2>Gourmet Dish </h2>
+                <p>Exquisite gourmet dish served on a vibrant plate in a luxurious Calgary restaurant.
+                </p>
+            </div>
+            <div class="card">
+                <img src="./images/3.jpg" alt="Gourmet Crab ">
+                <h2>Gourmet Crab </h2>
+                <p>Delicious gourmet crab dish garnished and served on an elegant platter with a smoky mist.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="about" id="about">
+    <div class="about-text">
+        <h2>Our Story</h2>
+        <p>Savoré began with a simple idea: great food made from fresh, local ingredients and served with care.
+            Every dish is crafted to bring people together around the table.</p>
+        <p>Whether it's a family dinner or a special night out, we want every visit to feel memorable.</p>
+    </div>
+    <img src="./images/savore inside.jpg" alt="Inside the Savoré dining room">
+</section>
+
+<section class="gallery" id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+        <img src="./images/plating.jpg" alt="Chef plating a dish">
+        <img src="./images/dining.jpg" alt="Dining room at night">
+        <img src="./images/plate.jpg" alt="Dessert platter">
+        <img src="./images/kitchen.jpg" alt="Fresh ingredients on a counter">
+        <img src="./images/outdoor.jpg" alt="Outdoor seating area">
+        <img src="./images/coktail.jpg" alt="Signature cocktail">
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+        <p><strong>Address:</strong> 123 Main Street, Your City</p>
+        <p><strong>Phone:</strong> +92 300 0000000</p>
+        <p><strong>Hours:</strong> Mon–Sun, 12:00 PM – 11:00 PM</p>
+    </div>
+    <form class="reserve-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="guests">Guests</label>
+        <input type="number" id="guests" name="guests" min="1" max="12" required>
+
+        <label for="message">Special requests</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit" class="btn">Reserve A Table</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2026 SAVORÉ. All rights reserved.</p>
+    <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">TikTok</a>
+    </div>
+</footer>
+
+</body>
+
+</html>
