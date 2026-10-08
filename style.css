@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav {
+    background-color: #1f1610;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    color: #ffffff;
+}
+
+.logo {
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+    /* margin-top: 10px; */
+    align-items: center;
+
+}
+
+.links a {
+    text-decoration: none;
+    color: #f5ede3;
+}
+
+.btn {
+    background-color: #b5532a;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 16px 32px;
+    color: #ffffff;
+}
+
+.btn:hover {
+    text-shadow: 2px 2px 5px #9a4422;
+}
+
+.hero {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 80vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 60px;
+}
+.hero h1{
+    color: #ffffff;
+   font-size: 40px;
+   margin-bottom: 10px;
+}
+.hero p{
+    color: #ffffff;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.btn{
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn:hover{
+    color: bisque;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.card{
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+     transition: all 0.3s;
+}
+.cards h2{
+    font-size: 35px;
+}
+.cards p{
+    font-weight: bolder;
+    font-size: 17px;
+}
+.cards img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+h2{
+    font-size: 38px;
+    text-align: center;
+    color: #9a4422;
+}
+.card:hover{
+    transform: translateY(-8px);
+}
+
+/* Sab sections ke liye common */
+:root {
+    --primary: #c8a15a;   /* gold accent, apna color daalein */
+    --dark: #1a1a1a;
+    --light: #f8f5f0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 80px 8%;
+}
+
+section > h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+
+/* ABOUT */
+.about {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background: var(--light);
+}
+
+.about-text,
+.about img {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.about img {
+    width: 100%;
+    max-width: 500px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* GALLERY */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.04);
+}
+
+/* CONTACT */
+.contact {
+    background: var(--light);
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.9;
+}
+
+.reserve-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.reserve-form label {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.reserve-form input,
+.reserve-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.reserve-form input:focus,
+.reserve-form textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.reserve-form .btn {
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* FOOTER */
+footer {
+    background: var(--dark);
+    color: #fff;
+    text-align: center;
+    padding: 30px 8%;
+}
+
+.socials {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.socials a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.socials a:hover {
+    text-decoration: underline;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
